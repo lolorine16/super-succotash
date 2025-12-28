@@ -4,14 +4,48 @@ import "fmt" // lib fmt
 
 func main() {
 	/*
-		*Exercice
-		• Créer un programme qui déclare une variable de manière explicite myNum1 , lui
-		attribue la valeur 50 et l’affiche.
-		• Faire la même chose avec myNum2 , en la déclarant de manière implicite.
+			* addition -> +
+			* soustraction -> -
+			* multiplication -> *
+			* division -> /
+			* modulo -> %
+		  * incrémentation -> ++
+		  * decrémentation -> --
 	*/
-	var myNum1 int = 50
-	fmt.Println(myNum1)
 
-	myNum2 := 50
-	fmt.Println(myNum2)
+	// OPERATEURS D'ASSIGNEMENT
+	/*
+	* a = b -> a := b
+	* a := b -> bar a = b
+	* a += b -> a = a + b
+	* a -= b -> a = a - b
+	* a *= b -> a = a * b
+	* a /= b -> a = a / b
+	* a %= b -> a = a % b
+	 */
+
+	// OPERATEURS RELATIONNELS
+	/*
+	* a == b -> égal à
+	* a != b -> différent de
+	* a > b  -> supérieur à
+	* a < b  -> inférieur à
+	* a >= b -> supérieur ou égal à
+	* a <= b -> inférieur ou égal à
+	 */
+
+	// OPERATEURS LOGIQUES
+	/*
+	* && et
+	* || ou
+	* ! diff
+	 */
+
+	a := 10
+	b := 3
+	fmt.Println("Addition :", a+b)
+	fmt.Println("Soustraction :", a-b)
+	fmt.Println("Multiplication :", a*b)
+	fmt.Println("Division :", a/b)
+	fmt.Println("Modulo :", a%b)
 }
