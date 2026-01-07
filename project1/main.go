@@ -22,11 +22,11 @@ func main() {
 
 	// boucle infinie
 	for i := 0; i > 0; i++ {
-		// Menue
+		// Menu
 		fmt.Println("\nChoose an option: ")
 		fmt.Println("1- Check if you age is even or odd")
-		fmt.Println("2- Enter tow number and see their sum")
-		fmt.Println("3- Enter a number and see it square")
+		fmt.Println("2- Enter two number and see their sum")
+		fmt.Println("3- Enter a number and see its square")
 		fmt.Println("4- Enter a number and check if its positive, negative or zero")
 		fmt.Printf("5- Exit\n")
 
@@ -35,7 +35,7 @@ func main() {
 		fmt.Scanln(&choice)
 
 		if choice == 5 {
-			fmt.Printf("GoodBye %s !", name)
+			fmt.Printf("Goodbye %s !", name)
 			break
 		} else if choice < 1 || choice > 5 {
 			fmt.Println("Invalid choice, please try again.")
@@ -74,7 +74,7 @@ func main() {
 					fmt.Printf("Is null !\n")
 				}
 			case 5:
-				fmt.Printf("GoodBye %s !", name)
+				fmt.Printf("Goodbye %s !", name)
 				break
 			}
 		}
