@@ -18,7 +18,7 @@ func main() {
 	fmt.Scanln(&age)
 
 	// Message
-	fmt.Printf("Hello %s, you are %d years old.", name, age)
+	fmt.Printf("Hello %s, you are %d years old.\n", name, age)
 
 	// Menue
 	fmt.Println("\nChoose an option: ")
@@ -26,7 +26,7 @@ func main() {
 	fmt.Println("2- Enter tow number and see their sum")
 	fmt.Println("3- Enter a number and see it square")
 	fmt.Println("4- Enter a number and check if its positive, negative or zero")
-	fmt.Println("5- Exit")
+	fmt.Printf("5- Exit\n")
 
 	var choice int
 	fmt.Println("Enter your choice: ")
