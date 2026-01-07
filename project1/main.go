@@ -39,7 +39,6 @@ func main() {
 			break
 		} else if choice < 1 || choice > 5 {
 			fmt.Println("Invalid choice, please try again.")
-			break
 		} else {
 			// Options
 			switch choice {
