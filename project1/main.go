@@ -20,52 +20,64 @@ func main() {
 	// Message
 	fmt.Printf("Hello %s, you are %d years old.\n", name, age)
 
-	// Menue
-	fmt.Println("\nChoose an option: ")
-	fmt.Println("1- Check if you age is even or odd")
-	fmt.Println("2- Enter tow number and see their sum")
-	fmt.Println("3- Enter a number and see it square")
-	fmt.Println("4- Enter a number and check if its positive, negative or zero")
-	fmt.Printf("5- Exit\n")
+	// boucle
+	for i := 0; i < 5; i++ {
+		// Menue
+		fmt.Println("\nChoose an option: ")
+		fmt.Println("1- Check if you age is even or odd")
+		fmt.Println("2- Enter tow number and see their sum")
+		fmt.Println("3- Enter a number and see it square")
+		fmt.Println("4- Enter a number and check if its positive, negative or zero")
+		fmt.Printf("5- Exit\n")
 
-	var choice int
-	fmt.Println("Enter your choice: ")
-	fmt.Scanln(&choice)
+		var choice int
+		fmt.Println("Enter your choice: ")
+		fmt.Scanln(&choice)
 
-	// Options
-	switch choice {
-	case 1:
-		if age%2 == 0 {
-			fmt.Println("Your age is even !")
+		if choice == 5 {
+			fmt.Printf("GoodBye %s !", name)
+			break
+		} else if choice < 1 || choice > 5 {
+			fmt.Println("Invalid choice, please try again.")
+			break
 		} else {
-			fmt.Println("Your age is odd !")
+			// Options
+			switch choice {
+			case 1:
+				if age%2 == 0 {
+					fmt.Println("Your age is even !")
+				} else {
+					fmt.Println("Your age is odd !")
+				}
+			case 2:
+				var nb1, nb2 int
+				fmt.Println("Enter number1: ")
+				fmt.Scanln(&nb1)
+				fmt.Println("Enter number2: ")
+				fmt.Scanln(&nb2)
+				somme := nb1 + nb2
+				fmt.Printf("The sum of %d and %d is %d", nb1, nb2, somme)
+			case 3:
+				var nb0 int
+				fmt.Println("Enter a number: ")
+				fmt.Scanln(&nb0)
+				carrer := nb0 * nb0
+				fmt.Printf("The square of %d is %d", nb0, carrer)
+			case 4:
+				var nb int
+				fmt.Println("Enter a number: ")
+				fmt.Scanln(&nb)
+				if nb > 0 {
+					fmt.Printf("%d is a positive number !", nb)
+				} else if nb < 0 {
+					fmt.Printf("%d is a negative number !", nb)
+				} else {
+					fmt.Printf("Is null !")
+				}
+			case 5:
+				fmt.Printf("GoodBye %s !", name)
+				break
+			}
 		}
-	case 2:
-		var nb1, nb2 int
-		fmt.Println("Enter number1: ")
-		fmt.Scanln(&nb1)
-		fmt.Println("Enter number2: ")
-		fmt.Scanln(&nb2)
-		somme := nb1 + nb2
-		fmt.Printf("The sum of %d and %d is %d", nb1, nb2, somme)
-	case 3:
-		var nb0 int
-		fmt.Println("Enter a number: ")
-		fmt.Scanln(&nb0)
-		carrer := nb0 * nb0
-		fmt.Printf("The square of %d is %d", nb0, carrer)
-	case 4:
-		var nb int
-		fmt.Println("Enter a number: ")
-		fmt.Scanln(&nb)
-		if nb > 0 {
-			fmt.Printf("%d est un nombre positif !", nb)
-		} else if nb < 0 {
-			fmt.Printf("%d est negatif !", nb)
-		} else {
-			fmt.Printf("le nombre est null !")
-		}
-	case 5:
-		fmt.Printf("Au revoir %s !", name)
 	}
 }
