@@ -27,4 +27,45 @@ func main() {
 	fmt.Println("3- Enter a number and see it square")
 	fmt.Println("4- Enter a number and check if its positive, negative or zero")
 	fmt.Println("5- Exit")
+
+	var choice int
+	fmt.Println("Enter your choice: ")
+	fmt.Scanln(&choice)
+
+	// Options
+	switch choice {
+	case 1:
+		if age%2 == 0 {
+			fmt.Println("Your age is even !")
+		} else {
+			fmt.Println("Your age is odd !")
+		}
+	case 2:
+		var nb1, nb2 int
+		fmt.Println("Enter number1: ")
+		fmt.Scanln(&nb1)
+		fmt.Println("Enter number2: ")
+		fmt.Scanln(&nb2)
+		somme := nb1 + nb2
+		fmt.Printf("The sum of %d and %d is %d", nb1, nb2, somme)
+	case 3:
+		var nb0 int
+		fmt.Println("Enter a number: ")
+		fmt.Scanln(&nb0)
+		carrer := nb0 * nb0
+		fmt.Printf("The square of %d is %d", nb0, carrer)
+	case 4:
+		var nb int
+		fmt.Println("Enter a number: ")
+		fmt.Scanln(&nb)
+		if nb > 0 {
+			fmt.Printf("%d est un nombre positif !", nb)
+		} else if nb < 0 {
+			fmt.Printf("%d est negatif !", nb)
+		} else {
+			fmt.Printf("le nombre est null !")
+		}
+	case 5:
+		fmt.Printf("Au revoir %s !", name)
+	}
 }
