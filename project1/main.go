@@ -56,23 +56,23 @@ func main() {
 				fmt.Println("Enter number2: ")
 				fmt.Scanln(&nb2)
 				somme := nb1 + nb2
-				fmt.Printf("The sum of %d and %d is %d", nb1, nb2, somme)
+				fmt.Printf("The sum of %d and %d is %d\n", nb1, nb2, somme)
 			case 3:
 				var nb0 int
 				fmt.Println("Enter a number: ")
 				fmt.Scanln(&nb0)
 				carrer := nb0 * nb0
-				fmt.Printf("The square of %d is %d", nb0, carrer)
+				fmt.Printf("The square of %d is %d\n", nb0, carrer)
 			case 4:
 				var nb int
 				fmt.Println("Enter a number: ")
 				fmt.Scanln(&nb)
 				if nb > 0 {
-					fmt.Printf("%d is a positive number !", nb)
+					fmt.Printf("%d is a positive number !\n", nb)
 				} else if nb < 0 {
-					fmt.Printf("%d is a negative number !", nb)
+					fmt.Printf("%d is a negative number !\n", nb)
 				} else {
-					fmt.Printf("Is null !")
+					fmt.Printf("Is null !\n")
 				}
 			case 5:
 				fmt.Printf("GoodBye %s !", name)
