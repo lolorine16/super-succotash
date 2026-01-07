@@ -20,8 +20,8 @@ func main() {
 	// Message
 	fmt.Printf("Hello %s, you are %d years old.\n", name, age)
 
-	// boucle
-	for i := 0; i < 5; i++ {
+	// boucle infinie
+	for i := 0; i > 0; i++ {
 		// Menue
 		fmt.Println("\nChoose an option: ")
 		fmt.Println("1- Check if you age is even or odd")
