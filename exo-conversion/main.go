@@ -10,9 +10,9 @@ func main() {
 	var age string
 	var dadAge int
 	fmt.Println("Entrer votre age : ")
-	fmt.Scanln(&age)
+	fmt.Scan(&age)
 	fmt.Println("Entrer l'age de votre papa : ")
-	fmt.Scanln(&dadAge)
+	fmt.Scan(&dadAge)
 
 	// conversion de l'age string en int
 	n, err := strconv.Atoi(age)
