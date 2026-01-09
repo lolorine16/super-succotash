@@ -11,6 +11,7 @@ func main() {
 	var dadAge int
 	fmt.Println("Entrer votre age : ")
 	fmt.Scanln(&age)
+
 	fmt.Println("Entrer l'age de votre papa : ")
 	fmt.Scanln(&dadAge)
 
@@ -19,6 +20,15 @@ func main() {
 	// gestion d'erreur
 	if err != nil {
 		fmt.Println("Invalid Input") // entrer invalide
+	}
+
+	// Mineur ou majeur
+	if n < 18 {
+		fmt.Println("Vous etes mineur !")
+	} else if n >= 18 {
+		fmt.Println("Vous etes majeur !")
+	} else {
+		fmt.Println("Entrer un age valide")
 	}
 
 	dadAgeOld := dadAge - n
