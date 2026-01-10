@@ -42,4 +42,6 @@ func main() {
 	var n0 float64 = float64(weight) * 2.20462
 
 	fmt.Printf("Votre poids en livres est de : %.2f lbs", n0)
+
+	fmt.Println("Goodbye")
 }
